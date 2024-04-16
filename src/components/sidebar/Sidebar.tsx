@@ -1,4 +1,4 @@
-import { IoAppsOutline, IoCalculatorOutline } from "react-icons/io5";
+import { IoAppsOutline, IoCalculatorOutline, IoPlanet } from "react-icons/io5";
 
 import SidebarLinkComponent, { LinkProps } from "./SidebarLink";
 import { ProfileProps, SidebarProfileComponent } from "./SidebarProfile";
@@ -18,6 +18,12 @@ const SidebarComponent = () => {
       name: "Counter",
       desc: "Local State",
     },
+    {
+      path: "/dashboard/pokemons",
+      icon: <IoPlanet size={25} />,
+      name: "Pokemons",
+      desc: "Static Render",
+    },
   ];
 
   const profile: ProfileProps = {
@@ -28,7 +34,7 @@ const SidebarComponent = () => {
   return (
     <div
       id="menu"
-      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-96 left-0 h-screen overflow-y-scroll"
+      className="bg-gray-900 min-h-screen z-10 text-slate-300 w-96 left-0 overflow-y-scroll"
     >
       <div id="logo" className="my-4 px-6">
         <SidebarLogoComponent />

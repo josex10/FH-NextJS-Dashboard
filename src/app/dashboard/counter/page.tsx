@@ -1,4 +1,4 @@
-import { CounterComponent } from "@/app/components/counter/counter";
+import { CounterComponent } from "@/components/counter/counter";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
