@@ -1,8 +1,20 @@
-import React from 'react'
+import { SimpleWidgetGrid } from '@/components/simpleWidget/SimpleWidgetGrid';
+
+export const metadata = {
+ title: 'Admin Dashboard',
+ description: 'Admin Dashboard',
+};
 
 const MainPage = () => {
   return (
-    <div>MainPage</div>
+    <>
+      <h1>Dashboard</h1>
+      <h4>Dashboard Information</h4>
+
+      <hr />
+
+      <SimpleWidgetGrid/>
+    </>
   )
 }
 

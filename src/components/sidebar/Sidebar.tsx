@@ -1,4 +1,4 @@
-import { IoAppsOutline, IoCalculatorOutline, IoPlanet } from "react-icons/io5";
+import { IoAppsOutline, IoCalculatorOutline, IoHeartOutline, IoPlanet } from "react-icons/io5";
 
 import SidebarLinkComponent, { LinkProps } from "./SidebarLink";
 import { ProfileProps, SidebarProfileComponent } from "./SidebarProfile";
@@ -23,6 +23,12 @@ const SidebarComponent = () => {
       icon: <IoPlanet size={25} />,
       name: "Pokemons",
       desc: "Static Render",
+    },
+    {
+      path: "/dashboard/favorites",
+      icon: <IoHeartOutline size={25} />,
+      name: "Favorites",
+      desc: "Globla State",
     },
   ];
 

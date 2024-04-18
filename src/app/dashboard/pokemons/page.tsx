@@ -1,7 +1,11 @@
-import Image from "next/image";
-import { Pokemon, PokemonsResponse } from "@/shared/interfaces";
 import {PokemonsGridComponent} from "@/components/pokemons/PokemonsGrid";
 import { getPokemons } from "@/api/pokemons/pokemons.api";
+
+
+export const metadata = {
+ title: 'Pokemons List',
+ description: 'Pokemons List',
+};
 
 const PokemonsPage = async () => {
   
